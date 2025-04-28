@@ -19,3 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch((error) => console.error("Error:", error));
     }
 });
+
+document.getElementById('tambahPengusulBtn').addEventListener('click', ()=>{
+    const id = sessionStorage.getItem('id_permohonan');
+    window.location.href = `dataid.php?id_permohonan=${id}`;
+  });
